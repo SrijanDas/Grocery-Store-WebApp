@@ -1,0 +1,21 @@
+.orderCard {
+  margin-top: 20px;
+  min-height: 70vh;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.orderCard__title {
+  color: gray;
+  margin-bottom: 20px;
+}
+.orderCard__buttons {
+  border-top: 1px solid lightgrey;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.manage_products {
+  margin-right: 15px;
+}

@@ -1,0 +1,15 @@
+.navbar {
+  background-color: white;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+.navbar__icons {
+  align-items: center;
+}
+.order__icon {
+  color: #d52f45 !important;
+}
+.product__icon {
+  color: #63e0a4 !important;
+}

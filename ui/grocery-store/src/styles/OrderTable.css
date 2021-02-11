@@ -1,0 +1,8 @@
+.orderTable {
+  min-width: 650px;
+}
+
+.orderTable__row:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
