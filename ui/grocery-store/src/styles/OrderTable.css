@@ -1,5 +1,13 @@
 .orderTable {
-  min-width: 650px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.orderTable__container {
+  border: 1px solid lightgrey;
+  min-width: 480px;
+  max-width: 70vw;
+  display: flex;
 }
 
 .orderTable__row:hover {
