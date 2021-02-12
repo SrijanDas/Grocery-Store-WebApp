@@ -1,4 +1,5 @@
 .navbar {
+  display: flex;
   background-color: white;
   align-items: center;
   padding: 15px;
@@ -12,4 +13,7 @@
 }
 .product__icon {
   color: #63e0a4 !important;
+}
+.home__icon {
+  color: rgb(133, 133, 133) !important;
 }

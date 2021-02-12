@@ -1,15 +1,10 @@
-.orderTable {
+.orderDetailsTable {
   display: flex;
   justify-content: center;
 }
-.orderTable__container {
+.orderDetailsTable__container {
   border: 1px solid lightgrey;
   min-width: 480px;
   max-width: 70vw;
-  max-height: 50vh;
   display: flex;
-}
-
-.orderTable__link {
-  text-decoration-line: none;
 }

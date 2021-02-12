@@ -6,8 +6,9 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
 import axios from "../axios";
+import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 function OrderTable() {
   const [orders, setOrders] = useState([]);
@@ -24,7 +25,7 @@ function OrderTable() {
 
   return (
     <div className="orderTable">
-      <TableContainer className="orderTable__container" component={Paper}>
+      <TableContainer className="orderTable__container">
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
@@ -40,17 +41,28 @@ function OrderTable() {
               <TableCell align="right">
                 <b>Total Cost</b>
               </TableCell>
+              <TableCell align="center"></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {orders.map((order) => (
-              <TableRow key={order.order_id} className="orderTable__row">
+              <TableRow key={order.order_id}>
                 <TableCell component="th" scope="row">
                   {order.datetime}
                 </TableCell>
                 <TableCell align="right">{order.order_id}</TableCell>
                 <TableCell align="right">{order.customer_name}</TableCell>
                 <TableCell align="right">{order.total}</TableCell>
+                <TableCell align="right">
+                  <Link
+                    className="orderTable__link"
+                    to={`/orderDetails/${order.order_id}`}
+                  >
+                    <Button variant="outlined" size="small" color="primary">
+                      Details
+                    </Button>
+                  </Link>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
